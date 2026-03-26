@@ -92,7 +92,7 @@ header img {
 }
 
 /* =========================================
-   LUXURY NAV SEARCH BAR
+ NAV SEARCH BAR
 ========================================= */
 .nav-search {
   flex: 1;
@@ -149,6 +149,33 @@ header img {
   box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.12), 0 0 28px rgba(212, 175, 55, 0.12) !important;
   transform: translateY(-6px) scale(1.01);
   transition: all 0.35s ease;
+}
+
+/* =========================================
+   MOBILE SEARCH ICON
+========================================= */
+.mobile-search-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.06);
+  color: var(--gold-soft);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobile-search-toggle i {
+  font-size: 14px;
+}
+
+.mobile-search-toggle:hover {
+  background: var(--lux-gradient);
+  color: #111;
+  transform: scale(1.05);
 }
 
 #navbar {
@@ -925,6 +952,16 @@ header img {
   }
 }
 
+@media (max-width: 768px) {
+  .nav-search {
+    display: none;
+  }
+
+  .mobile-search-toggle {
+    display: flex;
+  }
+}
+
 @media (max-width: 600px) {
   header {
     padding: 12px 5%;
@@ -990,3 +1027,4 @@ header img {
     grid-template-columns: 1fr;
   }
 }
+
