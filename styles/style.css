@@ -432,9 +432,9 @@ header img {
 .light-blue,
 .purple,
 .orange {
-  background: rgba(212, 175, 55, 0.08);
+  /* background: rgba(212, 175, 55, 0.08); */
   color: var(--gold-soft);
-  border: 1px solid rgba(212, 175, 55, 0.12);
+  /* border: 1px solid rgba(212, 175, 55, 0.12); */
 }
 
 /* =========================================
